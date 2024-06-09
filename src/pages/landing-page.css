@@ -1,0 +1,13 @@
+
+        .hover-effect::after {
+            content: ' →';
+            opacity: 0;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+        .hover-effect:hover::after {
+            opacity: 1;
+            transform: translateX(0.2rem);
+        }
+        .hover-effect:hover {
+            transform: translateX(-0.2rem);
+        }
