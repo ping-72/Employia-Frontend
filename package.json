@@ -30,13 +30,15 @@
     "vite": "^5.2.3"
   },
   "scripts": {
-    "start": "vite",
-    "build": "vite build && mv build dist",
-    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts build",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "root": true
+    "extends": [
+      "react-app",
+      "react-app/jest"
   },
   "browserslist": {
     "production": [
